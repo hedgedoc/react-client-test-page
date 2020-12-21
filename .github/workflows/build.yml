@@ -41,6 +41,9 @@ jobs:
         run: echo -e "ui-test.hedgedoc.org\nui-test.hedgedoc.net\n" > public/CNAME
       - name: Build project
         run: yarn build
+      - name: Fix 404 problem
+        run: ln -s index.html 404.html
+        working-directory: build
       - name: Deploy to GitHub Pages Branch
         uses: peaceiris/actions-gh-pages@v3
         with:
