@@ -38,7 +38,7 @@ jobs:
       - name: Change URL of branding
         run: sed -i 's/http:\/\/localhost:3001\/img\/acme.png/\/img\/acme.png/' public/api/v2/config
       - name: Create cname file
-        run: echo -e "ui-test.hedgedoc.org\nui-test.hedgedoc.net\n" public/CNAME
+        run: echo -e "ui-test.hedgedoc.org\nui-test.hedgedoc.net\n" > public/CNAME
       - name: Build project
         run: yarn build
       - name: Deploy to GitHub Pages Branch
