@@ -1,0 +1,48 @@
+# SPDX-FileCopyrightText: 2020 The HedgeDoc developers (see AUTHORS file)
+#
+# SPDX-License-Identifier: AGPL-3.0-only
+
+name: build
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build the main branch of react-client and deploy it
+    steps:
+      - name: Checkout react-client repository
+        uses: actions/checkout@v2
+        with:
+          repository: 'hedgedoc/react-client'
+          lfs: true
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - name: Cache node_modules
+        uses: actions/cache@v2
+        id: yarn-cache
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      - name: Set up NodeJS
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile --prefer-offline
+      - name: Change URL of branding
+        run: sed -i 's/http:\/\/localhost:3001\/img\/acme.png/\/img\/acme.png/' public/api/v2/config
+      - name: Create cname file
+        run: echo -e "ui-test.hedgedoc.org\nui-test.hedgedoc.net\n" public/CNAME
+      - name: Build project
+        run: yarn build
+      - name: Deploy to GitHub Pages Branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
