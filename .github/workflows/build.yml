@@ -40,7 +40,7 @@ jobs:
       - name: Create cname file
         run: echo -e "ui-test.hedgedoc.org\nui-test.hedgedoc.net\n" > public/CNAME
       - name: Build project
-        run: yarn build
+        run: yarn analyze
       - name: Fix 404 problem
         run: ln -s index.html 404.html
         working-directory: build
