@@ -19,8 +19,8 @@
     "logo": "/img/acme.png"
   },
   "banner": {
-      "text": "This is the test banner text",
-      "timestamp": "2020-05-22T20:46:08.962Z"
+    "text": "ui-demo instance without backend for commit 1b563f7",
+    "timestamp": "2020-05-22T20:46:08.962Z"
   },
   "customAuthNames": {
     "ldap": "FooBar",
@@ -36,8 +36,6 @@
     "imprint": "https://example.com/imprint"
   },
   "version": {
-    "version": "mock",
-    "sourceCodeUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "issueTrackerUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    "version": "mock"
   }
 }
