@@ -37,20 +37,24 @@ jobs:
           node-version: '14'
       - name: Install dependencies
         run: yarn install --frozen-lockfile --prefer-offline
-      - name: Change URL of branding
-        run: sed -i 's/http:\/\/localhost:3001\/img\/acme.png/\/img\/acme.png/' public/api/v2/config
       - name: Get current commit hash
         id: get-commit-hash
         run: echo "::set-output name=sha::$(git rev-parse --short HEAD)"
-      - name: Change version information
-        run: |
-          sed -i 's/0.0/dev-${{ steps.get-commit-hash.outputs.sha }}/' src/version.json
-          sed -i 's/www.youtube.com/watch?v=dQw4w9WgXcQ/github.com\/hedgedoc\/react-client\/tree\/${{ steps.get-commit-hash.outputs.sha }}/' src/version.json
-          jq ". |= del(.version.sourceCodeUrl, .version.issueTrackerUrl)" public/api/v2/config | sponge public/api/v2/config
-      - name: Update banner
-        run: sed -i 's/the test banner text/a ui-demo instance without backend for commit ${{ steps.get-commit-hash.outputs.sha }}/' public/api/v2/notes/banner
+      
+      - name: Change branding url
+        run: jq '.branding.logo = "/img/acme.png"' public/api/v2/config | sponge public/api/v2/config
+      - name: Write commit hash into version file
+        run: jq '.version = "dev-${{ steps.get-commit-hash.outputs.sha }}"' src/version.json | sponge src/version.json
+      - name: Correct source code url
+        run: jq '.sourceCodeUrl = "https://github.com/hedgedoc/react-client/tree/${{ steps.get-commit-hash.outputs.sha }}/"' src/version.json | sponge src/version.json
+      - name: Remove backend github URLs
+        run: jq '. |= del(.version.sourceCodeUrl, .version.issueTrackerUrl)' public/api/v2/config | sponge public/api/v2/config
+      - name: Update banner text
+        run: jq '.banner.text = "ui-demo instance without backend for commit ${{ steps.get-commit-hash.outputs.sha }}"' public/api/v2/config | sponge public/api/v2/config
+      
       - name: Create cname file
         run: echo -e "ui-test.hedgedoc.org\nui-test.hedgedoc.net\n" > public/CNAME
+      
       - name: Build project
         run: yarn analyze
       - name: Fix 404 problem
