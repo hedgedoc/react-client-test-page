@@ -19,7 +19,7 @@
     "logo": "/img/acme.png"
   },
   "banner": {
-    "text": "ui-demo instance without backend for commit bd31076",
+    "text": "ui-demo instance without backend for commit 0627e0f",
     "timestamp": "2020-05-22T20:46:08.962Z"
   },
   "customAuthNames": {
@@ -37,5 +37,9 @@
   },
   "version": {
     "version": "mock"
+  },
+  "iframeCommunication": {
+    "editorOrigin": "http://localhost:3001",
+    "rendererOrigin": "http://localhost:3001"
   }
 }
