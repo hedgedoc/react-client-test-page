@@ -54,6 +54,8 @@ jobs:
         run: jq '.sourceCodeUrl = "https://github.com/hedgedoc/react-client/tree/${{ steps.get-commit-hash.outputs.sha }}/"' src/version.json | sponge src/version.json
       - name: Correct issue tracker url
         run: jq '.issueTrackerUrl = "https://github.com/hedgedoc/react-client/issues"' src/version.json | sponge src/version.json
+      - name: Correct iframe communication origins
+        run: jq '.iframeCommunication |= map_values("https://ui-test.hedgedoc.org")' public/api/v2/config | sponge public/api/v2/config
       - name: Remove backend github URLs
         run: jq '. |= del(.version.sourceCodeUrl, .version.issueTrackerUrl)' public/api/v2/config | sponge public/api/v2/config
       - name: Update banner text
