@@ -39,7 +39,7 @@
     "version": "mock"
   },
   "iframeCommunication": {
-    "editorOrigin": "http://localhost:3001",
-    "rendererOrigin": "http://localhost:3001"
+    "editorOrigin": "https://ui-test.hedgedoc.org",
+    "rendererOrigin": "https://ui-test.hedgedoc.org"
   }
 }
