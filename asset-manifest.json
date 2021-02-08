@@ -15,8 +15,8 @@
     "katex.js": "/static/js/katex.8720d07f.chunk.js",
     "katex.js.map": "/static/js/katex.8720d07f.chunk.js.map",
     "main.css": "/static/css/main.5be910e2.chunk.css",
-    "main.js": "/static/js/main.1379b7d9.chunk.js",
-    "main.js.map": "/static/js/main.1379b7d9.chunk.js.map",
+    "main.js": "/static/js/main.473e8c35.chunk.js",
+    "main.js.map": "/static/js/main.473e8c35.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2ec056bb.js",
     "runtime-main.js.map": "/static/js/runtime-main.2ec056bb.js.map",
     "static/js/9.c9b78580.chunk.js": "/static/js/9.c9b78580.chunk.js",
@@ -80,6 +80,6 @@
     "static/js/runtime-main.2ec056bb.js",
     "static/js/9.c9b78580.chunk.js",
     "static/css/main.5be910e2.chunk.css",
-    "static/js/main.1379b7d9.chunk.js"
+    "static/js/main.473e8c35.chunk.js"
   ]
 }
