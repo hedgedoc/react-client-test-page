@@ -1,0 +1,12 @@
+/*!
+ * SPDX-FileCopyrightText: 2021 The HedgeDoc developers (see AUTHORS file)
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */.markdown-toc{width:100%;max-width:200px;max-height:100vh;overflow-y:auto;overflow-x:hidden;padding:2px}.markdown-toc.sticky{position:fixed;top:0}.markdown-toc>ul>li>a{padding:4px 10px}.markdown-toc>ul>li>ul>li>a{padding:1px 0 1px 20px}.markdown-toc>ul>li>ul>li>ul>li>a{padding:1px 0 1px 28px}.markdown-toc ul{padding:0;margin:0;list-style:none;font-size:.9em}.markdown-toc ul a{color:#767676;overflow:hidden;text-overflow:ellipsis;white-space:pre;display:block}.markdown-toc ul li.active a{margin-top:2px;margin-bottom:2px;color:#000;font-weight:700}.markdown-toc-sidebar-button{position:fixed;right:70px;bottom:30px}.markdown-toc-sidebar-button>.dropup{position:-webkit-sticky;position:sticky;bottom:20px;right:0}
+
+/*!
+ * SPDX-FileCopyrightText: 2021 The HedgeDoc developers (see AUTHORS file)
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */.markdown-document{width:100%;height:100%;margin:0;overflow:auto;display:flex;flex-direction:row}.markdown-document .markdown-document-side{flex:1 0}.markdown-document .markdown-document-content{padding-left:10px;padding-right:10px;flex:0 0 900px;max-width:100%;width:900px}
+/*# sourceMappingURL=renderPage.b7963509.chunk.css.map */
