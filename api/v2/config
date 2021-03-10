@@ -15,11 +15,11 @@
   },
   "allowRegister": true,
   "branding": {
-    "name": "ACME Corp",
+    "name": "DEMO Corp",
     "logo": "/img/acme.png"
   },
   "banner": {
-    "text": "ui-demo instance without backend for commit 6876aaa",
+    "text": "ui-demo instance without backend for commit 029295d",
     "timestamp": "2020-05-22T20:46:08.962Z"
   },
   "customAuthNames": {
