@@ -16,10 +16,10 @@
   "allowRegister": true,
   "branding": {
     "name": "DEMO Corp",
-    "logo": "/img/acme.png"
+    "logo": "/img/demo.png"
   },
   "banner": {
-    "text": "ui-demo instance without backend for commit 0b4a0af",
+    "text": "ui-demo instance without backend for commit a86789d",
     "timestamp": "2020-05-22T20:46:08.962Z"
   },
   "customAuthNames": {
