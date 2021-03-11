@@ -47,7 +47,7 @@ jobs:
         run: echo "::set-output name=sha::$(git rev-parse --short HEAD)"
       
       - name: Change branding url
-        run: jq '.branding.logo = "/img/acme.png"' public/api/v2/config | sponge public/api/v2/config
+        run: jq '.branding.logo = "/img/demo.png"' public/api/v2/config | sponge public/api/v2/config
       - name: Write commit hash into version file
         run: jq '.version = "dev-${{ steps.get-commit-hash.outputs.sha }}"' src/version.json | sponge src/version.json
       - name: Correct source code url
