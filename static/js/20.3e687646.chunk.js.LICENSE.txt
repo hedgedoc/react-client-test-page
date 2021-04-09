@@ -1,3 +1,0 @@
-/*! markmap-common v0.1.5 | MIT License */
-
-/*! markmap-view v0.2.6 | MIT License */
