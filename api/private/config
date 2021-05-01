@@ -19,7 +19,7 @@
     "logo": "/img/demo.png"
   },
   "banner": {
-    "text": "ui-demo instance without backend for commit b91ae18",
+    "text": "This is the test banner text",
     "timestamp": "2020-05-22T20:46:08.962Z"
   },
   "customAuthNames": {
@@ -30,13 +30,16 @@
   "maxDocumentLength": 100000,
   "useImageProxy": false,
   "plantumlServer": "https://www.plantuml.com/plantuml",
-  "specialLinks": {
+  "specialUrls": {
     "privacy": "https://example.com/privacy",
     "termsOfUse": "https://example.com/termsOfUse",
     "imprint": "https://example.com/imprint"
   },
   "version": {
-    "version": "mock"
+    "major": -1,
+    "minor": -1,
+    "patch": -1,
+    "commit": "mock"
   },
   "iframeCommunication": {
     "editorOrigin": "https://ui-test.hedgedoc.org",
