@@ -56,10 +56,6 @@ jobs:
         run: jq '.issueTrackerUrl = "https://github.com/hedgedoc/react-client/issues"' src/version.json | sponge src/version.json
       - name: Correct iframe communication origins
         run: jq '.iframeCommunication |= map_values("https://ui-test.hedgedoc.org")' public/api/private/config | sponge public/api/private/config
-      - name: Remove backend github URLs
-        run: jq '. |= del(.version.sourceCodeUrl, .version.issueTrackerUrl)' public/api/private/config | sponge public/api/private/config
-      - name: Update banner text
-        run: jq '.banner.text = "ui-demo instance without backend for commit ${{ steps.get-commit-hash.outputs.sha }}"' public/api/private/config | sponge public/api/private/config
       
       - name: Create cname file
         run: echo -e "ui-test.hedgedoc.org\nui-test.hedgedoc.net\n" > public/CNAME
