@@ -55,7 +55,7 @@ jobs:
       - name: Correct issue tracker url
         run: jq '.issueTrackerUrl = "https://github.com/hedgedoc/react-client/issues"' src/version.json | sponge src/version.json
       - name: Correct iframe communication origins
-        run: jq '.iframeCommunication |= map_values("https://ui-test.hedgedoc.org")' public/api/private/config | sponge public/api/private/config
+        run: jq '.iframeCommunication |= map_values("https://ui-test.hedgedoc.org/")' public/api/private/config | sponge public/api/private/config
       
       - name: Create cname file
         run: echo -e "ui-test.hedgedoc.org\nui-test.hedgedoc.net\n" > public/CNAME
