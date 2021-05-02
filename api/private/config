@@ -42,7 +42,7 @@
     "commit": "mock"
   },
   "iframeCommunication": {
-    "editorOrigin": "https://ui-test.hedgedoc.org",
-    "rendererOrigin": "https://ui-test.hedgedoc.org"
+    "editorOrigin": "https://ui-test.hedgedoc.org/",
+    "rendererOrigin": "https://ui-test.hedgedoc.org/"
   }
 }
