@@ -47,7 +47,7 @@ jobs:
         run: echo "::set-output name=sha::$(git rev-parse --short HEAD)"
       
       - name: Change branding url
-        run: jq '.branding.logo = "/img/demo.png"' public/api/private/config | sponge public/api/private/config
+        run: jq '.branding.logo = "/img/demo.png"' public/mock-backend/api/private/config | sponge public/mock-backend/api/private/config
       - name: Write commit hash into version file
         run: jq '.version = "dev-${{ steps.get-commit-hash.outputs.sha }}"' src/version.json | sponge src/version.json
       - name: Correct source code url
@@ -55,7 +55,7 @@ jobs:
       - name: Correct issue tracker url
         run: jq '.issueTrackerUrl = "https://github.com/hedgedoc/react-client/issues"' src/version.json | sponge src/version.json
       - name: Correct iframe communication origins
-        run: jq '.iframeCommunication |= map_values("https://ui-test.hedgedoc.org/")' public/api/private/config | sponge public/api/private/config
+        run: jq '.iframeCommunication |= map_values("https://ui-test.hedgedoc.org/")' public/mock-backend/api/private/config | sponge public/mock-backend/api/private/config
       - name: Update banner text
         run: echo "ui-demo instance without backend for commit ${{ steps.get-commit-hash.outputs.sha }}"' > public/mock-backend/public/banner.txt      
 
