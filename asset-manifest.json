@@ -29,8 +29,8 @@
     "katex.js": "/static/js/katex.7e5fdff2.chunk.js",
     "katex.js.map": "/static/js/katex.7e5fdff2.chunk.js.map",
     "main.css": "/static/css/main.3b7146ce.chunk.css",
-    "main.js": "/static/js/main.e259fd55.chunk.js",
-    "main.js.map": "/static/js/main.e259fd55.chunk.js.map",
+    "main.js": "/static/js/main.0ba9a364.chunk.js",
+    "main.js.map": "/static/js/main.0ba9a364.chunk.js.map",
     "markmap.js": "/static/js/markmap.c856274c.chunk.js",
     "markmap.js.map": "/static/js/markmap.c856274c.chunk.js.map",
     "mermaid.js": "/static/js/mermaid.a1e0f3a1.chunk.js",
@@ -101,6 +101,6 @@
     "static/js/runtime-main.16be52ae.js",
     "static/js/19.2af2c2db.chunk.js",
     "static/css/main.3b7146ce.chunk.css",
-    "static/js/main.e259fd55.chunk.js"
+    "static/js/main.0ba9a364.chunk.js"
   ]
 }
