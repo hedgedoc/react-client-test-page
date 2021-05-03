@@ -46,8 +46,6 @@ jobs:
         id: get-commit-hash
         run: echo "::set-output name=sha::$(git rev-parse --short HEAD)"
       
-      - name: Change branding url
-        run: jq '.branding.logo = "/img/demo.png"' public/mock-backend/api/private/config | sponge public/mock-backend/api/private/config
       - name: Write commit hash into version file
         run: jq '.version = "dev-${{ steps.get-commit-hash.outputs.sha }}"' src/version.json | sponge src/version.json
       - name: Correct source code url
