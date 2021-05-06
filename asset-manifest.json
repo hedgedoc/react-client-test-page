@@ -22,15 +22,15 @@
     "documentReadOnly.js": "/static/js/documentReadOnly.03ecc514.chunk.js",
     "documentReadOnly.js.map": "/static/js/documentReadOnly.03ecc514.chunk.js.map",
     "editor.css": "/static/css/editor.8fbae8ab.chunk.css",
-    "editor.js": "/static/js/editor.343e9b59.chunk.js",
-    "editor.js.map": "/static/js/editor.343e9b59.chunk.js.map",
+    "editor.js": "/static/js/editor.8a3fba04.chunk.js",
+    "editor.js.map": "/static/js/editor.8a3fba04.chunk.js.map",
     "highlight.js.js": "/static/js/highlight.js.124ce21b.chunk.js",
     "highlight.js.js.map": "/static/js/highlight.js.124ce21b.chunk.js.map",
     "katex.js": "/static/js/katex.b801ae20.chunk.js",
     "katex.js.map": "/static/js/katex.b801ae20.chunk.js.map",
     "main.css": "/static/css/main.3b7146ce.chunk.css",
-    "main.js": "/static/js/main.c2f442ee.chunk.js",
-    "main.js.map": "/static/js/main.c2f442ee.chunk.js.map",
+    "main.js": "/static/js/main.0f6e2c1f.chunk.js",
+    "main.js.map": "/static/js/main.0f6e2c1f.chunk.js.map",
     "markmap.js": "/static/js/markmap.c4da8fec.chunk.js",
     "markmap.js.map": "/static/js/markmap.c4da8fec.chunk.js.map",
     "mermaid.js": "/static/js/mermaid.6fca1aac.chunk.js",
@@ -38,8 +38,8 @@
     "renderPage.css": "/static/css/renderPage.f2282f94.chunk.css",
     "renderPage.js": "/static/js/renderPage.7133b30e.chunk.js",
     "renderPage.js.map": "/static/js/renderPage.7133b30e.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.b7d6cd01.js",
-    "runtime-main.js.map": "/static/js/runtime-main.b7d6cd01.js.map",
+    "runtime-main.js": "/static/js/runtime-main.89f7523a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.89f7523a.js.map",
     "static/js/17.e76628db.chunk.js": "/static/js/17.e76628db.chunk.js",
     "static/js/17.e76628db.chunk.js.map": "/static/js/17.e76628db.chunk.js.map",
     "static/js/18.186a897b.chunk.js": "/static/js/18.186a897b.chunk.js",
@@ -98,9 +98,9 @@
     "static/media/logo_text_wb_horizontal.fb1ff24d.svg": "/static/media/logo_text_wb_horizontal.fb1ff24d.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b7d6cd01.js",
+    "static/js/runtime-main.89f7523a.js",
     "static/js/19.7b3a7dfe.chunk.js",
     "static/css/main.3b7146ce.chunk.css",
-    "static/js/main.c2f442ee.chunk.js"
+    "static/js/main.0f6e2c1f.chunk.js"
   ]
 }
