@@ -1,1 +1,1 @@
-ui-demo instance without backend for commit a4d6de9
+ui-demo instance without backend for commit 93722f4
