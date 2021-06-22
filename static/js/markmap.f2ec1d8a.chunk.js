@@ -1,0 +1,2 @@
+(this.webpackJsonpreact_client=this.webpackJsonpreact_client||[]).push([[14],{1605:function(t,r,a){"use strict";a.r(r),a.d(r,"markmapLoader",(function(){return o}));var n=a(1589),e=a(1585),c=new n.a,o=function(t,r){var a=c.transform(r).root;e.a.create(t,{},a)}}}]);
+//# sourceMappingURL=markmap.f2ec1d8a.chunk.js.map
